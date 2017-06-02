@@ -24,11 +24,11 @@ function setup() {
 function draw() {
   // instead of clearing the background, fade it by drawing
   // a semi-transparent rectangle on top
-  fill(204, 120);
+  fill(random(110,200), random(120,159), random(123,200));
   rect(0, 0, width, height);
 
   // write the text in black and get its bounding box
-  fill(0);
+  fill(255,100+random(50),212+random(50));
   text(message, x, y);
   bounds = font.textBounds(message,x,y,fontsize);
 
