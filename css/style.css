@@ -1,0 +1,164 @@
+body{
+  background: #ccc;
+}
+
+.cassette{
+  width: 350px;
+  height: 200px;
+  background: white;
+  border-radius: 5px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow:
+    1px 1px #111,
+    2px 2px #111,
+    3px 3px #111,
+    5px 5px 9px #999;
+  background-image:
+    linear-gradient(-58deg,
+      rgba(255,100,100,0.2) 23%,
+      rgba(255,255,255,0.08) 33%,
+      transparent 70%),
+
+    radial-gradient(
+      ellipse 12px 12px
+      at 5% 9%,
+      #eee 50%, transparent 50%),
+    radial-gradient(
+      ellipse 12px 12px
+      at 95% 9%,
+      #eee 50%, transparent 50%),
+    radial-gradient(
+      ellipse 12px 12px
+      at 5% 91%,
+      #eee 50%, transparent 50%),
+    radial-gradient(
+      ellipse 12px 12px
+      at 95% 91%,
+      #eee 50%, transparent 50%),
+
+    radial-gradient(
+      ellipse 15px 15px
+      at 30% 91%,
+      #eee 50%, transparent 50%),
+    radial-gradient(
+      ellipse 15px 15px
+      at 70% 91%,
+      #eee 50%, transparent 50%),
+    radial-gradient(
+      ellipse 10px 10px
+      at 62% 87%,
+      #eee 50%, transparent 50%),
+    radial-gradient(
+      ellipse 10px 10px
+      at 38% 87%,
+      #eee 50%, transparent 50%),
+
+    linear-gradient(to left, #222 4%, transparent 1%),
+    linear-gradient(to right, #222 4%, transparent 1%),
+    linear-gradient(to top, #222 28%, transparent 5%),
+    linear-gradient(to bottom, #222 9%, transparent 5%),
+
+    linear-gradient(135deg, #222 12%, transparent 5%),
+    linear-gradient(-135deg, #222 12%, transparent 5%),
+
+    linear-gradient(to top, #ddd 35%, transparent 1%),
+    linear-gradient(to bottom, #fff 29%, transparent 1%),
+    radial-gradient(
+      ellipse 60px 70px
+      at 75% 47%,
+      #222 50%, transparent 50%),
+    radial-gradient(
+      ellipse 60px 70px
+      at 27% 47%,
+      #222 50%, transparent 50%),
+    radial-gradient(
+      ellipse 200px 120px
+      at 50% 47%,
+      #222 50%, transparent 50%),
+
+    linear-gradient(to top, #ddd 39%, transparent 5%),
+    linear-gradient(to top, #BF4D28 47%, transparent 5%),
+    linear-gradient(to top, #E6AC27 55%, transparent 5%),
+    linear-gradient(to top, #80BCA3 63%, transparent 5%);
+}
+.cassette:before, .cassette:after{
+  content: '';
+  position: absolute;
+  background: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  top: 69px;
+  animation: 4s spin-me-right-round linear infinite;
+  background-image:
+    radial-gradient(
+      ellipse 10px 10px
+      at 50% 5%,
+      #999 50%, transparent 50%),
+    radial-gradient(
+      ellipse 10px 10px
+      at 72% 12%,
+      #999 50%, transparent 50%),
+    radial-gradient(
+      ellipse 10px 10px
+      at 87% 29%,
+      #999 50%, transparent 50%),
+
+    radial-gradient(
+      ellipse 10px 10px
+      at 94% 50%,
+      #999 50%, transparent 50%),
+    radial-gradient(
+      ellipse 10px 10px
+      at 87% 71%,
+      #999 50%, transparent 50%),
+    radial-gradient(
+      ellipse 10px 10px
+      at 72% 88%,
+      #999 50%, transparent 50%),
+
+    radial-gradient(
+      ellipse 10px 10px
+      at 50% 95%,
+      #999 50%, transparent 50%),
+    radial-gradient(
+      ellipse 10px 10px
+      at 13% 71%,
+      #999 50%, transparent 50%),
+    radial-gradient(
+      ellipse 10px 10px
+      at 28% 88%,
+      #999 50%, transparent 50%),
+
+
+    radial-gradient(
+      ellipse 10px 10px
+      at 4% 50%,
+      #999 50%, transparent 50%),
+    radial-gradient(
+      ellipse 10px 10px
+      at 28% 12%,
+      #999 50%, transparent 50%),
+    radial-gradient(
+      ellipse 10px 10px
+      at 13% 29%,
+      #999 50%, transparent 50%);
+}
+
+.cassette:before{
+  left: 74px;
+}
+
+.cassette:after{
+  right: 68px;
+}
+
+@keyframes spin-me-right-round{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
